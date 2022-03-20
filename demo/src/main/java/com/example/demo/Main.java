@@ -47,7 +47,6 @@ public class Main {
             System.out.println("INSERT INTO `keyboards`(`id`, `midi`, `name`, `octaves`, `price`, `type`) VALUES ('"+i+"',true,'piano"+i+"','7','"+a*23000+"','форте-пиано');");
             i++;
             System.out.println("INSERT INTO `keyboards`(`id`, `midi`, `name`, `octaves`, `price`, `type`) VALUES ('"+i+"',true,'piano"+i+"','7','"+a*53000+"','форте-пиано');");
-            i++;
         }
 
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n");
@@ -77,8 +76,23 @@ public class Main {
             System.out.println("INSERT INTO `percussion`(`id`, `model`, `name`, `price`, `type`) VALUES ('"+i+"','акустическая','baraban"+i+"','"+a*9000+"','null');");
             i++;
             System.out.println("INSERT INTO `percussion`(`id`, `model`, `name`, `price`, `type`) VALUES ('"+i+"','электро','baraban"+i+"','"+a*10000+"','sm110');");
-            i++;
 
+
+        }
+
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n");
+
+        for (int i = 0; i < 100; i++) {
+            int a = i;
+            System.out.println("INSERT INTO `studio_equipment`(`id`, `in_line`, `name`, `out_line`, `price`) VALUES ('"+i+"','"+i%15+"','akustic"+i+"','"+(i+2)%15+"','"+a*8300+"');");
+            i++;
+            System.out.println("INSERT INTO `studio_equipment`(`id`, `in_line`, `name`,`out_line`, `price`) VALUES ('"+i+"','"+i%15+"','akustic"+i+"','"+(i+2)%15+"','"+a*9300+"');");
+            i++;
+            System.out.println("INSERT INTO `studio_equipment`(`id`, `in_line`, `name`,`out_line`, `price`) VALUES ('"+i+"','"+i%15+"','akustic"+i+"','"+(i+2)%15+"','"+a*11300+"');");
+            i++;
+            System.out.println("INSERT INTO `studio_equipment`(`id`, `in_line`, `name`,`out_line`, `price`) VALUES ('"+i+"','"+i%15+"','akustic"+i+"','"+(i+2)%15+"','"+a*14300+"');");
+            i++;
+            System.out.println("INSERT INTO `studio_equipment`(`id`, `in_line`, `name`,`out_line`, `price`) VALUES ('"+i+"','"+i%15+"','akustic"+i+"','"+(i+2)%15+"','"+a*2300+"');");
         }
     }
 }

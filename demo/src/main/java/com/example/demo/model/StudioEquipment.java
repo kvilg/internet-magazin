@@ -10,15 +10,25 @@ public class StudioEquipment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    private String name;
 
     private Integer price;
 
     private Integer outLine , inLine;
 
-    public StudioEquipment(Integer price, Integer outLine, Integer inLine) {
+    public StudioEquipment(String name,Integer price, Integer outLine, Integer inLine) {
         this.price = price;
         this.outLine = outLine;
         this.inLine = inLine;
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getId() {
